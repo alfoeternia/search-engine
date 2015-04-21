@@ -16,6 +16,7 @@
 
 int main(int argc, char const *argv[])
 {
+	// @see https://gcc.gnu.org/onlinedocs/libstdc++/manual/parallel_mode_design.html
 	__gnu_parallel::_Settings s;
 	s.algorithm_strategy = __gnu_parallel::force_parallel;
 	__gnu_parallel::_Settings::set(s);
